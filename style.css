@@ -969,30 +969,32 @@ html, body {
 }
 
 .reveal-supertitle {
-  font-size: 11px;
-  letter-spacing: 0.32em;
+  font-family: var(--font-editorial);
+  font-size: clamp(40px, 11vw, 62px);
+  font-weight: 400;
+  letter-spacing: 0.14em;
   text-transform: uppercase;
   color: var(--accent-gold);
-  font-weight: 500;
-  margin-bottom: 12px;
+  line-height: 1.1;
+  margin-bottom: 10px;
+  text-shadow: 0 4px 30px rgba(197, 160, 89, 0.3);
   opacity: 0;
-  transform: translateY(10px);
-  animation: fadeInSettled 1.2s 0.3s var(--ease-cinematic) forwards;
+  transform: translateY(16px) scale(0.96);
+  animation: revealHero 1.4s 0.3s var(--ease-cinematic) forwards;
 }
 
 .reveal-name {
   font-family: var(--font-editorial);
-  font-size: clamp(52px, 14vw, 76px);
-  font-weight: 400;
-  letter-spacing: 0.12em;
+  font-size: clamp(22px, 6vw, 32px);
+  font-weight: 300;
+  letter-spacing: 0.32em;
   text-transform: uppercase;
-  color: var(--text-primary);
-  line-height: 1.05;
+  color: var(--text-secondary);
+  line-height: 1.2;
   margin-bottom: 20px;
-  text-shadow: 0 4px 30px rgba(197, 160, 89, 0.25);
   opacity: 0;
-  transform: translateY(16px) scale(0.96);
-  animation: revealHero 1.4s 0.6s var(--ease-cinematic) forwards;
+  transform: translateY(10px);
+  animation: fadeInSettled 1.2s 0.7s var(--ease-cinematic) forwards;
 }
 
 @keyframes revealHero {
