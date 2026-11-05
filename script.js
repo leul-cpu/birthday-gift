@@ -275,8 +275,8 @@
         wakeScene.removeEventListener('click', handleAwaken);
 
         // Resume / Initialize Web Audio on user gesture
+        // (each play method internally awaits ensureContextAsync for mobile safety)
         if (this.sound) {
-          this.sound.ensureContext();
           this.sound.startAmbientDrone();
           this.sound.playOrbTouch(1.3);
         }
